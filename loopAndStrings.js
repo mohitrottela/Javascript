@@ -60,9 +60,39 @@
 
 // guess the correct value 
 
-let value = prompt('guess the correct number');
-let num = 10;
-while(num != value){
-    value = prompt("try again");
-}
-console.log("you won")
+// let value = prompt('guess the correct number');
+// let num = 10;
+// while(num != value){
+//     value = prompt("try again");
+// }
+// console.log("you won")
+
+// string in Js
+// let str = "viral";
+// console.log(str.length);
+
+// let obj = {
+//    product:"pen",
+//    price:10
+// }
+
+// let specialStr= `The cost \n of the ${obj.product} is ${obj.price}`; // Template literals
+// console.log(specialStr)
+
+//String Method in js
+// let str = "mohit rottela";
+// let str1 = "nick name";
+// let newStr = str.trim();
+// console.log(newStr);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.trim());
+// console.log(str.slice(3,7))//it ro
+// console.log(str.concat( str1))//mohit rottela nick name 
+// console.log(str.replace("tt","ut"))//mohit routela
+
+//Question
+let userInput = prompt("enter you full Name");
+let userInputSize = userInput.length;
+let userName = `@${userInput}${userInputSize}`;
+console.log(userName);
