@@ -49,4 +49,33 @@ let redArr = [2,3,5,8,10];
 let redmethod = redArr.reduce((result, curent)=>{
     return result<curent? result: curent;
 })
+
 console.log(redmethod)
+
+
+//question
+let marks = [22,5,92,78,99];
+let above = marks.filter((result)=>{
+    return result >90;
+
+})
+console.log(above)
+
+
+//Question
+
+let userInput = prompt("enter number from 1 to 100");
+let newArr = []
+for(let i=0; i<userInput; i++){
+    newArr[i]=i+1;
+}
+let total = newArr.reduce((result, current)=>{
+    return result>current
+})
+console.log(total)
+console.log(newArr)
+
+const temperatures = [25, 18, 32, 20, 15];
+
+// Use reduce() with initial values of -Infinity and Infinity
+const maxTempReduce = temperatures.reduce((max, temp) => Math.max(max, temp), -Infinity);
