@@ -41,3 +41,12 @@ let evenValue = filArr.filter((value)=>{
     return value > 10;
 })
 console.log(evenValue);
+
+
+// reduced method
+
+let redArr = [2,3,5,8,10];
+let redmethod = redArr.reduce((result, curent)=>{
+    return result<curent? result: curent;
+})
+console.log(redmethod)
