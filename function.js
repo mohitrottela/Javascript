@@ -34,3 +34,10 @@ let cube =arr1.map((val)=>{
    return val**3;
 })
 console.log(cube);
+
+//filter method
+let filArr=[121,12,45,8,44,36,9];
+let evenValue = filArr.filter((value)=>{
+    return value > 10;
+})
+console.log(evenValue);
